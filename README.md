@@ -5,7 +5,17 @@ You can find the paper at https://papers.ssrn.com/sol3/papers.cfm?abstract_id=40
 
 
 We currently provide the recovered percentiles of missing firm characteristics in file `raw_infill.xlsx`. The data has x columns:
-- 123
-- 456
+- date: in format YYYY-MM-01
+- id: in format crsp_PERMNO
+- char: name of the characteristic, following the convention in Jensen, Kelly, Pedersen (2021): https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3774514
+- perc: recovered percentile of the missing entry
+- lower: lower raw value of the recovered percentile
+- upper: upper raw value of the recovered percentile
+- mid: mean between lower and upper as an estimate for the raw value of the recovered characteristic
+- mean: mean of the raw observed entries for other firms within the recovered percentile
+- median: median of the raw observed entries for other firms within the recovered percentile
+- missingness [%]: how often the target characteristic is missing per month (date) across all firms
+
+NOTE: we only provide information about the recovered _missing_ entries.
 
 We plan to also provide the fitted model in the future, as well as code to estimate it.
