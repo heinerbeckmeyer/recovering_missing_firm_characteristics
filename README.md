@@ -4,7 +4,7 @@ Repository to the paper "Recovering Missing Firm Characteristics with Attention-
 You can find the paper at https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4003455.
 
 
-We currently provide the recovered percentiles of missing firm characteristics in file `raw_infill.xlsx`. The data has x columns:
+We currently provide the recovered percentiles of missing firm characteristics in file `raw_infill.xlsx`. Because of the large size of the recovered entries, you can download the estimated values at https://sites.google.com/view/beckmeyer/data-code. The data has 10 columns:
 - date: in format YYYY-MM-01
 - id: in format crsp_PERMNO
 - char: name of the characteristic, following the convention in Jensen, Kelly, Pedersen (2021): https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3774514
@@ -18,4 +18,4 @@ We currently provide the recovered percentiles of missing firm characteristics i
 
 NOTE: we only provide information about the recovered _missing_ entries.
 
-We plan to also provide the fitted model in the future, as well as code to estimate it.
+We plan to also provide the fitted model in the future, as well as code to estimate it, at this GitHub repository.
